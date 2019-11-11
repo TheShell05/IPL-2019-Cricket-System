@@ -1,0 +1,953 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.card img{
+  height: 480px;
+  width: 100%;
+  padding:10%;
+}
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+img {
+  width:100%
+}
+
+/* Utility Classes */
+.own-container {
+  width:90%;
+  margin: 5%;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.text-primary1 {
+  color: #93cb52;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary1 {
+  background: #93cb52;
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btnop{
+  opacity: 0.7;
+}
+.btn:hover {
+  background: #7ab436;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Social*/
+#Follow #Social{
+  display: flex;
+  justify-self: flex-end;
+}
+
+#Follow #Social i{
+  color: #777;
+  margin: 0.5rem;
+}
+
+#Follow #Social i:hover{
+  color: #f4f4f4;
+  background: #7ab436;
+  border-radius: 25%;
+  margin-bottom: 1rem;
+}
+
+
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top:0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+#navbar .logo .Log:hover {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+/* Showcase */
+#showcase {
+  background: #333 url('img/Main-Header/IPL1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  padding-bottom: 1.5rem;
+  
+  /* Overlay */
+  position: absolute;
+  top: 112px;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* About*/
+
+#About .history{
+  display: flex;
+  padding: 1rem;
+}
+
+#what .history .info{
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#About .history .info i {
+  background: #93cb52;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#showcase1 {
+  background: #333 url('Win-2008.jpg') no-repeat center center/cover;
+  height: 100vh;
+  padding-top: 100px;
+  color: #fff;
+}
+
+#About{
+  padding:5%;
+}
+
+#PWinners{
+  padding:5%;
+}
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
+
+
+#CSK{
+  background-image: linear-gradient(yellow, orange);
+  color: blue;
+}
+
+#DC{
+  background-image: linear-gradient(blue, white);
+  color: darkred;
+}
+
+#KKR{
+  background-image: linear-gradient(purple, goldenrod);
+  color: darkslateblue;
+}
+
+#MI{
+  background-image: linear-gradient(blue, gold);
+  color: whitesmoke;
+}
+
+#KXIP{
+  background-image: linear-gradient(red, silver);
+  color: red;
+}
+
+#RR{
+  background-image: linear-gradient(fuchsia, white);
+  color: darkmagenta;
+}
+#RCB{
+  background-image: linear-gradient(red, gold);
+  color: black;
+}
+#SRH{
+  background-image: linear-gradient(orange, red);
+  color: white;
+}
+
+.team{
+  margin: 3%;
+}
+
+.team .wins{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 25px;
+  color: goldenrod;
+  padding:1% 5%;
+  margin: 2%;
+  display:block;
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.team .card-title{
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.team .card-text{
+  font-size: 1.3rem;
+}
+
+.team a{
+  font-size: 1.5rem;
+  color:black; 
+  font-weight: 500; 
+  background: none;
+  border:none;
+  border-radius: 25px;
+}
+
+.team a:hover{
+  background-color: #7ab436;
+  color: whitesmoke;
+}
+
+.winner{
+  padding: 3%;
+}
+
+.winner .m-heading{
+  font-size: 4rem;
+}
+
+.winner img{
+  height: 65%;
+  width: 80%;
+}
+/* New Navbar */
+#Tnavbar {
+  display: flex;
+  position: relative;
+  top:0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#Tnavbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#Tnavbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#Tnavbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+#Tnavbar .logo .Log:hover {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+/* Chennai Super Kings */
+.team-page{
+  display: grid;
+}
+
+#CSK-page .header{
+  position: relative;
+}
+
+#CSK-page .header img{
+  width: 100%;  
+  height: 30rem;
+}
+
+#CSK-page .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,0,0.7);
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+  border-right: solid 10px blue;
+  transform: skew(-45deg)
+}
+
+.team-page .header{
+  display: grid;
+  justify-self: center;
+  width:100%;
+  height:30rem; 
+}
+
+.team-page .team-info{
+  transform: skew(45deg);
+  padding-left: 10%;
+}
+
+.team-page .team-info .m-heading{
+  padding-left: 25%;
+  font-size: 3rem;
+  color: whitesmoke;
+  text-shadow: 2px 2px  black;
+}
+
+.team-info .team-data{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  color: darkblue;
+}
+
+.team-info .team-data p{
+  font-size: 1.3rem;
+}
+
+.team-page #navbar{
+  background:  yellow;
+  font-size: 1.5rem;
+  padding-bottom: 0;  
+  font-weight: 500;;
+}
+
+.team-page #navbar a{
+  color:blue;  
+  text-decoration: none;
+}
+
+.team-page #navbar a:hover{
+  background-color: darkblue;
+  color: yellow;
+}
+
+
+
+/* Mumbai Indians */
+
+.team-page{
+  display: grid;
+}
+#MI-page .header{
+  position: relative;
+}
+
+#MI-page .header img{
+  width: 100%;  
+  height: 30rem;
+}
+
+#MI-page .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,139,0.7);
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+  border-right: solid 10px silver;
+  transform: skew(-45deg)
+}
+
+.team-page .header{
+  display: grid;
+  justify-self: center;
+  width:100%;
+  height:30rem; 
+}
+
+.team-page .team-info1{
+  transform: skew(45deg);
+  padding-left: 10%;
+}
+
+.team-page .team-info1 .m-heading{
+  padding-left: 25%;
+  font-size: 3rem;
+  color: silver;
+  text-shadow: 2px 2px  black;
+}
+
+.team-info1 .team-data1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  color: whitesmoke;
+}
+
+.team-info1 .team-data1 p{
+  font-size: 1.3rem;
+}
+
+.team-page #navbar1{
+  background: darkblue;
+  font-size: 1.5rem;
+  padding-bottom: 0;  
+  font-weight: 500;
+}
+
+.team-page #navbar1 a{
+  color: whitesmoke;  
+  text-decoration: none;
+}
+
+.team-page #navbar1 a:hover{
+  background-color: silver;
+  color: darkblue;
+}
+
+/* Delhi Capitals */
+.team-page{
+  display: grid;
+}
+#DC-page .header{
+  position: relative;
+}
+
+#DC-page .header img{
+  width: 100%;  
+  height: 30rem;
+}
+
+#DC-page .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,139,0.7);
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+  border-right: solid 10px red;
+  transform: skew(-45deg)
+}
+
+.team-page .header{
+  display: grid;
+  justify-self: center;
+  width:100%;
+  height:30rem; 
+}
+
+.team-page .team-info2{
+  transform: skew(45deg);
+  padding-left: 10%;
+}
+
+.team-page .team-info2 .m-heading{
+  padding-left: 25%;
+  font-size: 3rem;
+  color: silver;
+  text-shadow: 2px 2px  black;
+}
+
+.team-info2 .team-data2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  color: whitesmoke;
+}
+
+.team-info2 .team-data2 p{
+  font-size: 1.3rem;
+}
+
+.team-page #navbar2{
+  background: darkblue;
+  font-size: 1.5rem;
+  padding-bottom: 0;  
+  font-weight: 500;
+}
+
+.team-page #navbar2 a{
+  color: whitesmoke;  
+  text-decoration: none;
+}
+
+.team-page #navbar2 a:hover{
+  background-color: darkblue;
+  color: red;
+}
+
+/* Kolkata Knight Riders */
+.team-page{
+  display: grid;
+}
+#KKR-page .header{
+  position: relative;
+}
+
+#KKR-page .header img{
+  width: 100%;  
+  height: 30rem;
+}
+
+#KKR-page .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(128,0,128,0.7);
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+  border-right: solid 10px gold;
+  transform: skew(-45deg)
+}
+
+.team-page .header{
+  display: grid;
+  justify-self: center;
+  width:100%;
+  height:30rem; 
+}
+
+.team-page .team-info3{
+  transform: skew(45deg);
+  padding-left: 10%;
+}
+
+.team-page .team-info3 .m-heading{
+  padding-left: 25%;
+  font-size: 3rem;
+  color: gold;
+  text-shadow: 2px 2px  black;
+}
+
+.team-info3 .team-data3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  color: whitesmoke;
+}
+
+.team-info3 .team-data3 p{
+  font-size: 1.3rem;
+}
+
+.team-page #navbar3{
+  background: purple;
+  font-size: 1.5rem;
+  padding-bottom: 0;  
+  font-weight: 500;
+}
+
+.team-page #navbar3 a{
+  color: whitesmoke;  
+  text-decoration: none;
+}
+
+.team-page #navbar3 a:hover{
+  background-color: darkslateblue;
+  color:gold;
+}
+
+/* Kings XI Punjab */
+.team-page{
+  display: grid;
+}
+#KXIP-page .header{
+  position: relative;
+}
+
+#KXIP-page .header img{
+  width: 100%;  
+  height: 30rem;
+}
+
+#KXIP-page .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(220,20,60,0.7);
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+  border-right: solid 10px silver;
+  transform: skew(-45deg)
+}
+
+.team-page .header{
+  display: grid;
+  justify-self: center;
+  width:100%;
+  height:30rem; 
+}
+
+.team-page .team-info4{
+  transform: skew(45deg);
+  padding-left: 10%;
+}
+
+.team-page .team-info4 .m-heading{
+  padding-left: 25%;
+  font-size: 3rem;
+  color: silver;
+  text-shadow: 2px 2px  black;
+}
+
+.team-info4 .team-data4{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  color: whitesmoke;
+}
+
+.team-info4 .team-data4 p{
+  font-size: 1.3rem;
+}
+
+.team-page #navbar4{
+  background: crimson;
+  font-size: 1.5rem;
+  padding-bottom: 0;  
+  font-weight: 500;
+}
+
+.team-page #navbar4 a{
+  color: whitesmoke;  
+  text-decoration: none;
+}
+
+.team-page #navbar4 a:hover{
+  background-color:#B22222;
+  color:silver;
+}
+/* Rajasthan Royals */
+.team-page{
+  display: grid;
+}
+#RR-page .header{
+  position: relative;
+}
+
+#RR-page .header img{
+  width: 100%;  
+  height: 30rem;
+}
+
+#RR-page .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(30,144,255,0.7);
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+  border-right: solid 10px gold;
+  transform: skew(-45deg)
+}
+
+.team-page .header{
+  display: grid;
+  justify-self: center;
+  width:100%;
+  height:30rem; 
+}
+
+.team-page .team-info5{
+  transform: skew(45deg);
+  padding-left: 10%;
+}
+
+.team-page .team-info5 .m-heading{
+  padding-left: 25%;
+  font-size: 3rem;
+  color: silver;
+  text-shadow: 2px 2px  black;
+}
+
+.team-info5 .team-data5{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  color: whitesmoke;
+}
+
+.team-info5 .team-data5 p{
+  font-size: 1.3rem;
+}
+
+.team-page #navbar5{
+  background: rgb(30,144,255);
+  font-size: 1.5rem;
+  padding-bottom: 0;  
+  font-weight: 500;
+}
+
+.team-page #navbar5 a{
+  color: whitesmoke;  
+  text-decoration: none;
+}
+
+.team-page #navbar5 a:hover{
+  background-color: #00BFFF		;
+  color:gold;
+}
+
+/* Royal Challengers */
+.team-page{
+  display: grid;
+}
+#RCB-page .header{
+  position: relative;
+}
+
+#RCB-page .header img{
+  width: 100%;  
+  height: 30rem;
+}
+
+#RCB-page .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.9);
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+  border-right: solid 10px #F08080;
+  transform: skew(-45deg)
+}
+
+.team-page .header{
+  display: grid;
+  justify-self: center;
+  width:100%;
+  height:30rem; 
+}
+
+.team-page .team-info7{
+  transform: skew(45deg);
+  padding-left: 10%;
+}
+
+.team-page .team-info7 .m-heading{
+  padding-left: 25%;
+  font-size: 3rem;
+  color: silver;
+  text-shadow: 2px 2px whitesmoke;
+}
+
+.team-info7 .team-data7{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  color: whitesmoke;
+}
+
+.team-info7 .team-data7 p{
+  font-size: 1.3rem;
+}
+
+.team-page #navbar7{
+  background: rgb(0,0,0);
+  font-size: 1.5rem;
+  padding-bottom: 0;  
+  font-weight: 500;
+}
+
+.team-page #navbar7 a{
+  color: whitesmoke;  
+  text-decoration: none;
+}
+
+.team-page #navbar7 a:hover{
+  background-color: red		;
+  color:whitesmoke;
+}
+
+/* Sunrisers Hyderabad */
+
+.team-page{
+  display: grid;
+  
+}
+#SRH-page .header{
+  position: relative;
+}
+
+#SRH-page .header img{
+  width: 100%;  
+  height: 30rem;
+}
+
+#SRH-page .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,127,80,0.7);
+  height: 100%;
+  width: 50%;
+  z-index: 100;
+  border-right: solid 10px #FFDF00	;
+  transform: skew(-45deg)
+}
+
+.team-page .header{
+  display: grid;
+  justify-self: center;
+  width:100%;
+  height:30rem; 
+}
+
+.team-page .team-info6{
+  transform: skew(45deg);
+  padding-left: 10%;
+}
+
+.team-page .team-info6 .m-heading{
+  padding-left: 25%;
+  font-size: 3rem;
+  color: #FFDF00;
+  text-shadow: 2px 2px  black;
+}
+
+.team-info6 .team-data6{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  color: black;
+}
+
+.team-info6sss .team-data6 p{
+  font-size: 1.3rem;
+}
+
+.team-page #navbar6{
+  background: rgb(255,127,80);
+  font-size: 1.5rem;
+  padding-bottom: 0;  
+  font-weight: 500;
+}
+
+.team-page #navbar6 a{
+  color: black;  
+  text-decoration: none;
+}
+
+.team-page #navbar6 a:hover{
+  background-color:#FFDF00		;
+  color:red;
+}
+
+#Stats-img{
+  width: 10;
+  height: 10;
+}
